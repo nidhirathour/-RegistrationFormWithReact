@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": "8624",
+      "userName": "Ram ",
+      "LastName": "Krishna",
+      "userNumber": "6787656785",
+      "userEmail": "ram@gmail.com",
+      "userCourses": "Full Stack Developer",
+      "userHighQualification": "B.tech",
+      "userYearGraduation": "2024",
+      "userState": "Goa",
+      "userObjective": "Your technical skills are the foundation of a strong engineering team and we want to see you grow those skills to be a strong team member. ",
+      "userAim": "A skilled frontend developer is essential in building a website that is both aesthetically pleasing and user friendly."
+    },
+    {
+      "id": "d0ba",
+      "userName": "Radhika",
+      "LastName": "Saini",
+      "userNumber": "8887776665",
+      "userEmail": "radika@gmail.com",
+      "userCourses": "Backend Developer",
+      "userHighQualification": "BA",
+      "userYearGraduation": "2021",
+      "userState": "Jammu and Kashmir",
+      "userObjective": "Your technical skills are the foundation of a strong engineering team and we want to see you grow those skills to be a strong team member. ",
+      "userAim": "A skilled frontend developer is essential in building a website that is both aesthetically pleasing and user friendly."
+    }
+  ]
+}
