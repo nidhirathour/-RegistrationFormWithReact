@@ -35,14 +35,14 @@ const RegistrationForm = () => {
         <form className='formContainer' onSubmit={handleSubmit(submittedData)}>
           <div className='CommonDivStyle'>
             <div>
-              <label>First Name<span style={{ color: "red" }}>*</span></label> <br /> <br />
+              <label>First Name<span style={{ color: "red" }}>*</span></label> <br />  
               <input className='CommonInputStyle myInput' type="text"  {...register("userName",{required:"Enter First Name",maxLength: 20 })}/>
                {errors.userName && <p style={{ color: "red" }}>{errors.userName?.message}</p>}
                {/* {errors.userName ? <p style={{ color: "red" }}>{errors.userName?.message}</p>:<p style={{ color: "green" }}>Correct</p>} */}
                 
             </div>
             <div>
-              <label>Last Name<span style={{ color: "red" }}>*</span></label> <br /><br />
+              <label>Last Name<span style={{ color: "red" }}>*</span></label> <br /> 
               <input className='CommonInputStyle' type="text"  {...register("LastName",{required:"Enter Last Name", maxLength:25})}/>
               {errors.LastName && <p style={{ color: "red" }}>{errors.LastName?.message}</p>} 
             </div>
@@ -50,12 +50,12 @@ const RegistrationForm = () => {
 
           <div className='CommonDivStyle'>
             <div>
-              <label>Mob No<span style={{ color: "red" }}>*</span></label><br /><br />
+              <label>Mob No<span style={{ color: "red" }}>*</span></label><br /> 
               <input className='CommonInputStyle' type="number"  {...register("userNumber",{required:"Enter Mob No", maxLength:10})}/>
               {errors.userNumber && <p style={{ color: "red" }}>{errors.userNumber.message}</p>}
             </div>
             <div>
-              <label>Email ID<span style={{ color: "red" }}>*</span></label><br /><br />
+              <label>Email ID<span style={{ color: "red" }}>*</span></label><br /> 
               <input className='CommonInputStyle' type="email"  {...register("userEmail",{required:"Enter EmailId"})}/>
               {errors.userEmail && <p style={{ color: "red" }}>{errors.userEmail.message}</p>}
             </div>
@@ -63,7 +63,7 @@ const RegistrationForm = () => {
 
           <div className='CommonDivStyle'>
             <div>
-              <label>Course<span style={{ color: "red" }}>*</span></label><br /><br />
+              <label>Course<span style={{ color: "red" }}>*</span></label><br /> 
                
 
               <select name="courses" id="myCourses" class="CommonInputStyle" {...register("userCourses")}>
@@ -76,7 +76,7 @@ const RegistrationForm = () => {
                 {/* {errors.userCourses==="Course" && <p style={{ color: "red" }}>{errors.userCourses.message}</p>} */}
             </div>
             <div>
-              <label>High Qualification<span style={{ color: "red" }}>*</span></label><br /><br />
+              <label>High Qualification<span style={{ color: "red" }}>*</span></label><br /> 
               <input className='CommonInputStyle' type="text"  {...register("userHighQualification",{required:"Enter Your Higher Qualification"})}/>
               {errors.userHighQualification && <p style={{ color: "red" }}>{errors.userHighQualification.message}</p>}
             </div>
@@ -84,7 +84,7 @@ const RegistrationForm = () => {
 
           <div className='CommonDivStyle'>
             <div>
-              <label>Year Graduation<span style={{ color: "red" }}>*</span></label><br /><br />
+              <label>Year Graduation<span style={{ color: "red" }}>*</span></label><br /> 
               <select name="gradu" id="draducationYeadr" class="CommonInputStyle" {...register("userYearGraduation")}>
                 <option value="Year">Year</option>
                 <option value="2021">2021</option>
@@ -95,7 +95,7 @@ const RegistrationForm = () => {
                {/* {errors.userYearGraduation==="Course" && <p style={{ color: "red" }}>{errors.userYearGraduation.message}</p>} */}
             </div>
             <div>
-              <label>State<span style={{ color: "red" }}>*</span></label><br /><br />
+              <label>State<span style={{ color: "red" }}>*</span></label><br /> 
 
 
               <select name="state" id="state" class="CommonInputStyle" {...register("userState")}>
@@ -144,13 +144,13 @@ const RegistrationForm = () => {
 
           <div className='CommonDivStyle'>
             <div>
-              <label>What Is The Objective Of Your Participation ?<span style={{ color: "red" }}>*</span></label><br /><br />
+              <label>What Is The Objective Of Your Participation ?<span style={{ color: "red" }}>*</span></label><br /> 
               <textarea className='myTextArea' type="text"  {...register("userObjective",{required:"Enter Your Objective", maxLength:200})}></textarea>
               {errors.userObjective && <p style={{ color: "red" }}>{errors.userObjective?.message}</p>}
             </div>
 
             <div>
-              <label>Why You Want To Join ?<span style={{ color: "red" }}>*</span></label><br /><br />
+              <label>Why You Want To Join ?<span style={{ color: "red" }}>*</span></label><br /> 
               <textarea className='myTextArea' type="text"  {...register("userAim",{required:"Enter here, why you want to join?", maxLength:200})}></textarea>
               {errors.userAim && <p style={{ color: "red" }}>{errors.userAim?.message}</p>}
             </div>
